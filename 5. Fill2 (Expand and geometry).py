@@ -1,0 +1,20 @@
+from tkinter import *
+
+window = Tk()
+window.geometry('500x400')
+frame1 = Frame(window)
+frame1.pack(side=TOP, fill=BOTH, expand=True)
+frame2 = Frame(window)
+frame2.pack(side=BOTTOM)
+label = Label(frame1, text='Welcome!!',fg='Red')
+label.pack()
+button1 = Button(frame1, text='Click Me', fg='Black', bg='pink')
+button1.pack(fill=X)
+button2 = Button(frame2, text = 'Next', fg='green')
+button2.pack(side=LEFT)
+button3 = Button(frame1, text = 'Help', fg='blue')
+button3.pack(side=RIGHT, fill=Y)
+button4 = Button(frame2, text='Cancel', fg='brown')
+button4.pack(side=LEFT)
+
+window.mainloop()
